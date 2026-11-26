@@ -27,8 +27,10 @@ $$
 Pour démarrer,  : plus d’aléas, saison figée en hiver (S = 1), tension amont fixée à 63 kV, et courbe de journée réduite à 4 points (4 h : 0,45 ; 9 h : 0,85 ; 19 h : 1,00). Il ne reste que l’heure et la prise comme variables, et l’écart avec le modèle complet reste inférieur à une prise (de −0,12 à +0,32 kV sur la journée). Cette version garde l’essentiel : la tension baisse quand la charge monte, et il faut remonter la prise pour compenser.
 
 $$
+\begin{aligned
 I_{\text{charge}} = 950 \times P_4(h) \quad \text{(en A)}\\
 U_{HTA} = 20 \times \left(1 + 0{,}0125 \times (\text{prise} - 9)\right) - 0{,}001 \times I_{\text{charge}} \quad \text{(en kV)}
+\end{aligned}
 $$
 
 # AI
