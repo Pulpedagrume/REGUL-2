@@ -14,11 +14,11 @@ Cette variation est représentée par un facteur allant de 0 à 1 : plus ce fact
 
 Le modèle complet ajoute deux petits aléas lents, qui rendent chaque journée différente :
 
-
+$$
 I_charge = 950 × P(h) × S(jour)          (A)
 U_HTB    = 64 − 2 × P(h)                 (kV)
-U_HTA    = 20 × (U_HTB / 63) × (1 + 0,0125 × (prise − 9)) − 0,001 × I_charge     (kV)
-
+U_{HTA} = 20 \times \frac{U_{HTB}}{63} \times \left(1 + 0.0125 \times (\text{prise} - 9)\right) - 0.001 \times I_{\text{charge}}     (kV)
+$$
 
 Pour démarrer,  : plus d’aléas, saison figée en hiver (S = 1), tension amont fixée à 63 kV, et courbe de journée réduite à 4 points (4 h : 0,45 ; 9 h : 0,85 ; 19 h : 1,00). Il ne reste que l’heure et la prise comme variables, et l’écart avec le modèle complet reste inférieur à une prise (de −0,12 à +0,32 kV sur la journée). Cette version garde l’essentiel : la tension baisse quand la charge monte, et il faut remonter la prise pour compenser.
 
@@ -27,9 +27,6 @@ U_HTA    = 20 × (1 + 0,0125 × (prise − 9)) − 0,001 × I_charge         (kV
 
 
 # AI
-Structure du projet Github
-Modèle mathématique pour simulation vie
+- Structure du projet Github
+- Modèle mathématique pour simulation vie
 
-
-'''math
-'''
