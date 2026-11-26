@@ -1,0 +1,16 @@
+Type,Adresse,Description
+Coils (bit lecture/écriture),CO 0,Régulation (0 éteinte ; 1 allumée)
+Coils (bit lecture/écriture),CO 1,Mode Auto (0 manuel ; 1 automatique)
+Coils (bit lecture/écriture),CO 2,Prise + impulsion monte une prise en mode manuel
+Coils (bit lecture/écriture),CO 3,Prise - impulsion descend une prise en mode manuel
+Discrete inputs (bit lecture seule),DI 0,Seuil bas tension (0 = OK ; 1 = alarme)
+Discrete inputs (bit lecture seule),DI 1,Seuil haut tension (0 = OK ; 1 = alarme)
+Discrete inputs (bit lecture seule),DI 2,Butée Prise maximale atteinte 1 - 17 (0 = OK ; 1 = alarme)
+Holding registers (mot lecture/écriture),HR 0,"seuil haut réglable (en volts, valeur entière)"
+Holding registers (mot lecture/écriture),HR 1,"seuil bas réglable (en volts, valeur entière)"
+Holding registers (mot lecture/écriture),HR 2,"tension mesurée (en volts, valeur entière)"
+Holding registers (mot lecture/écriture),HR 3,réglage du jour de l'année (1 à 365)
+Input registers (mot lecture seule),IR 0,Prise en cours (1 à 17)
+Input registers (mot lecture seule),IR 1,"tension de sortie du poste (en volts, valeur entière)"
+Input registers (mot lecture seule),IR 2,heure actuelle (0 à 23)
+Input registers (mot lecture seule),IR 3,"courant de charge (en ampères, valeur entière)"
