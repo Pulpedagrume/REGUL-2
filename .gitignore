@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environnements virtuels
+.venv/
+env/
+venv/
+
+# Node-RED
+node_modules/
+.node-red/
+package-lock.json
+
+# IDEs et OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
