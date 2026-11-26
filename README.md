@@ -1,10 +1,10 @@
-#Régulation de la tension
+# Régulation de la tension
 
-###Pourquoi réguler la tension ?
+### Pourquoi réguler la tension ?
 
 La tension livrée aux consommateurs doit rester proche de sa valeur nominale (20 kV). Trop basse, les moteurs chauffent et les appareils s'arrêtent ; trop haute, le matériel s'abîme. Or elle baisse naturellement quand la charge augmente. Les consommateurs demandent plus de puissance (P = U × I) et, la tension étant à peu près imposée, c'est le courant I qui augmente. Ce courant traverse la résistance R du réseau, qui est fixe, et y provoque une chute de tension R × I. La tension qui reste pour les consommateurs, U_source − R × I, est donc d'autant plus basse que le courant est élevé (le soir, en hiver avec le chauffage) : à prise fixe, elle perd environ 1 kV entre une nuit d'été et un soir d'hiver. On régule donc en changeant la prise du transformateur (environ 0,25 kV par prise) : on la monte quand la tension est trop basse, on la descend quand elle est trop haute.
 
-##Modèle de simulation de la tension
+## Modèle de simulation de la tension
 La tension de sortie U_HTA ne dépend pas directement du jour : 
 Elle découle d’une chaîne de calcul. L’heure fait varier la charge et la tension du réseau (courbe type de la journée P(h), avec un creux la nuit et une pointe le soir).
 Le jour fait varier la charge selon la saison S(jour)
