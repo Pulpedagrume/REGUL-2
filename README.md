@@ -16,9 +16,9 @@ Le modèle complet ajoute deux petits aléas lents, qui rendent chaque journée 
 
 $$
 \begin{aligned}
-I_{charge} = 950 × P(h) × S(jour)          (A)\\
-U_HTB    = 64 − 2 × P(h)                 (kV)\\
-U_{HTA} = 20 \times \frac{U_{HTB}}{63} \times \left(1 + 0.0125 \times (\text{prise} - 9)\right) - 0.001 \times I_{\text{charge}}     (kV)
+I_{\text{charge}} = 950 \times P(h) \times S(\text{jour}) \quad \text{(en A)}   \\
+U_{HTB} = 64 - 2 \times P(h) \quad \text{(en kV)}       \\
+U_{HTA} = 20 \times \frac{U_{HTB}}{63} \times \left(1 + 0.0125 \times (\text{prise} - 9)\right) - 0.001 \times I_{\text{charge (en kV)}}     (kV)
 \end{aligned}
 $$
 
